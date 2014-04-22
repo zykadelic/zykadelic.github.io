@@ -34,7 +34,7 @@ body { font-family: 'Open Sans', sans-serif; }
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
-	background: url(http://en.gravatar.com/avatar/84526facda777ff46233cfa3859cd5b8.jpg?size=100) no-repeat center;
+	background: url(http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg?size=100) no-repeat center; /* gravatar: root@zykadelic.com */
 	background-size: 100%;
 	box-shadow: 0 0 20px #333;
 	-webkit-transition: border 1s .1s, box-shadow 1s .1s;
@@ -98,5 +98,5 @@ body { font-family: 'Open Sans', sans-serif; }
 
 /* Retina graphics */
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5){
-	#header .avatar { background-image: url(http://en.gravatar.com/avatar/84526facda777ff46233cfa3859cd5b8.jpg?size=200); }
+	#header .avatar { background-image: url(http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg?size=200); }
 }
