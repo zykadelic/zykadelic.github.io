@@ -68,12 +68,6 @@ body { font-family: 'Open Sans', sans-serif; }
 	line-height: normal;
 	text-align: center;
 }
-#header .subtitle a {
-	color: inherit;
-	text-decoration: none;
-}
-#header .subtitle a:hover,
-#header .subtitle a:focus { text-decoration: underline; }
 
 
 #main-wrapper { background: #fff; }
