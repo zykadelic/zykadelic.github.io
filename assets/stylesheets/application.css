@@ -12,7 +12,7 @@ body { font-family: 'Open Sans', sans-serif; }
 #main-wrapper {
 	position: relative;
 	z-index: 10;
-	margin-top: 219px; /* must be less than width of #header because of Safari-bug */
+	margin-top: 219px; /* must be less than height of #header because of Safari-bug */
 }
 /* end fading header */
 
