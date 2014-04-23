@@ -9,6 +9,12 @@ body { font-family: 'Open Sans', sans-serif; }
 	padding: 20px;
 	margin: 0 auto;
 }
+hr {
+	margin: 0;
+	height: 1px;
+	border: none;
+	background: #eee;
+}
 
 /* "Fading" header */
 #header {
