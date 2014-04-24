@@ -5,7 +5,8 @@ body { font-family: 'Open Sans', sans-serif; }
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	padding: 20px;
 	margin: 0 auto;
 }
@@ -94,7 +95,7 @@ hr {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.contact-links .icon + .icon { margin-left: 15px; }
+.contact-links .icon + .icon { margin-left: 5%; }
 
 
 /* Retina graphics */
