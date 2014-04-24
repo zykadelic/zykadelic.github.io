@@ -1,0 +1,19 @@
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: no-repeat center;
+	background-size: contain;
+	vertical-align: middle;
+	color: transparent;
+	font-size: 0;
+	line-height: normal;
+}
+
+.icon.email { background-image: url(../images/icons/email.svg); }
+.icon.twitter { background-image: url(../images/icons/twitter.svg); }
+.icon.github { background-image: url(../images/icons/github.svg); }
+.icon.stackoverflow { background-image: url(../images/icons/stackoverflow.svg); }
+.icon.careers { background-image: url(../images/icons/careers.svg); }
+.icon.coderwall { background-image: url(../images/icons/coderwall.svg); /* inofficial */ }
+.icon.linkedin { background-image: url(../images/icons/linkedin.svg); /* inofficial */ }
