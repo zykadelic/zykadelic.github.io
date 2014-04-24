@@ -84,15 +84,6 @@ hr {
 
 
 #main { background: #fff; }
-#main .sample {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	height: 420px;
-	background: #eee;
-}
-#main .sample + .sample { margin-top: 30px; }
 
 
 .contact-links {
