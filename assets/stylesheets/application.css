@@ -83,10 +83,7 @@ hr {
 }
 
 
-#main {
-	background: #fff;
-	padding: 10px 0;
-}
+#main { background: #fff; }
 #main .sample {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
