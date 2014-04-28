@@ -107,6 +107,10 @@ hr {
 	text-align: justify;
 }
 .bio p { margin: 0 0 16px; }
+.bio em {
+	font-weight: 400;
+	font-style: normal;
+}
 
 
 /* Retina graphics */
