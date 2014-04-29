@@ -20,7 +20,7 @@ hr {
 	background: #eee;
 }
 
-/* "Fading" header */
+/* "Fading" header *
 #header {
 	position: fixed;
 	top: 0;
@@ -30,7 +30,7 @@ hr {
 #main {
 	position: relative;
 	z-index: 1;
-	margin-top: 219px; /* must be less than height of #header because of Safari-bug */
+	margin-top: 219px; /* must be less than height of #header because of Safari-bug *
 }
 /* end fading header */
 
