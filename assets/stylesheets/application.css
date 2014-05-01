@@ -59,8 +59,8 @@ hr {
 	transition: border 1s .1s, box-shadow 1s .1s;
 }
 #header .root-link:hover .avatar {
-	border-color: #0bf;
-	box-shadow: 0 0 0 #0bf;
+	border-color: #55acee;
+	box-shadow: 0 0 0 #55acee;
 	-webkit-transition-duration: 0;
 	-moz-transition-duration: 0;
 	transition-duration: 0;
