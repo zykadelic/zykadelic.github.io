@@ -4,13 +4,19 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
+.page-section {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px 0;
+}
 .page-wrapper {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 640px;
-	padding: 20px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 hr {
@@ -95,6 +101,7 @@ hr {
 
 
 .contact-links {
+	padding: 0;
 	background: #55acee;
 	text-align: center;
 }
