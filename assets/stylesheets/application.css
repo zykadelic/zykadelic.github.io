@@ -53,6 +53,8 @@ hr {
 	border-radius: 100%;
 	background: url(http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg?size=100) no-repeat center; /* gravatar: root@zykadelic.com */
 	background-size: 100%;
+	-webkit-box-shadow: 0 0 20px #333;
+	-moz-box-shadow: 0 0 20px #333;
 	box-shadow: 0 0 20px #333;
 	-webkit-transition: border 1s .1s, box-shadow 1s .1s;
 	-moz-transition: border 1s .1s, box-shadow 1s .1s;
@@ -60,6 +62,8 @@ hr {
 }
 #header .root-link:hover .avatar {
 	border-color: #55acee;
+	-webkit-box-shadow: 0 0 0 #55acee;
+	-moz-box-shadow: 0 0 0 #55acee;
 	box-shadow: 0 0 0 #55acee;
 	-webkit-transition-duration: 0;
 	-moz-transition-duration: 0;
