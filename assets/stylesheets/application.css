@@ -121,6 +121,7 @@ hr {
 
 #bio-section {
 	margin-top: 10px;
+	margin-bottom: 10px;
 	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
 	text-align: justify;
@@ -130,6 +131,64 @@ hr {
 	font-weight: 400;
 	font-style: normal;
 }
+
+
+#timeline-section { background: #f5f8fa; }
+#timeline-section .timeline-list {
+	padding: 5px 0 10px 15px;
+	margin: 5px 0 15px 4px;
+	border: 0 solid transparent;
+	border-width: 1px 3px 5px;
+	border-left-color: #55acee;
+	list-style: none;
+}
+#timeline-section .timeline-list .timeline-item {
+	position: relative;
+	display: block;
+	padding: 10px 12px 14px;
+	border-bottom: 1px solid #ccd6dd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+	-webkit-box-shadow: 0 0 2px #ccd6dd;
+	-moz-box-shadow: 0 0 2px #ccd6dd;
+	box-shadow: 0 0 2px #ccd6dd;
+}
+#timeline-section .timeline-list .timeline-item + .timeline-item { margin-top: 20px; }
+#timeline-section .timeline-list .timeline-item:before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 100%;
+	display: block;
+	width: 15px;
+	border-bottom: 3px solid #55acee;
+}
+#timeline-section .timeline-list .timeline-item.present {
+	border-bottom-width: 2px;
+	border-bottom-color: #55acee;
+}
+
+#timeline-section .timeline-list .timeline-item .title {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+#timeline-section .timeline-list .timeline-item .subtitle {
+	margin: 0;
+	color: #8899a6;
+	font-family: 'Roboto Slab', serif;
+	font-size: 12px;
+	font-weight: 300;
+}
+#timeline-section .timeline-list .timeline-item .subtitle .split { margin: 0 2px; }
+#timeline-section .timeline-list .timeline-item .subtitle .split:before { content: "\2022"; } /* &bull; */
+#timeline-section .timeline-list .timeline-item .description {
+	margin: 6px 0 0;
+	font-size: 14px;
+}
+#timeline-section .timeline-list .timeline-item .description + .description { margin-top: 14px; }
 
 
 /* Retina graphics */
