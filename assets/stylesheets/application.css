@@ -99,6 +99,12 @@ hr {
 
 
 #main { background: #fff; }
+#main .page-section .section-title {
+	margin: 0 0 8px;
+	color: #66757f;
+	font-size: 28px;
+	font-weight: 600;
+}
 
 
 #contact-section {
