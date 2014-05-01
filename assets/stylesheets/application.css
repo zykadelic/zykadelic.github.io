@@ -31,6 +31,7 @@ hr {
 	position: fixed;
 	top: 0;
 	z-index: 0;
+	width: 100%;
 	height: 220px;
 }
 #main {
@@ -40,10 +41,7 @@ hr {
 }
 /* end fading header */
 
-#header {
-	width: 100%;
-	background: #222;
-}
+#header { background: #222; }
 #header .root-link {
 	display: block;
 	text-align: center;
