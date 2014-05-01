@@ -100,27 +100,27 @@ hr {
 #main { background: #fff; }
 
 
-.contact-links {
+#contact-section {
 	padding: 0;
 	background: #55acee;
 	text-align: center;
 }
-.contact-links .page-wrapper {
+#contact-section .page-wrapper {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.contact-links .icon + .icon { margin-left: 5%; }
+#contact-section .icon + .icon { margin-left: 5%; }
 
 
-.bio {
+#bio-section {
 	padding-top: 30px;
 	color: #666;
 	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
 	text-align: justify;
 }
-.bio p { margin: 0 0 16px; }
-.bio em {
+#bio-section p { margin: 0 0 16px; }
+#bio-section em {
 	font-weight: 400;
 	font-style: normal;
 }
