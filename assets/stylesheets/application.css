@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto+Slab:300,400);
 
 body {
+	color: #292f33;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
@@ -25,7 +26,7 @@ hr {
 	margin: 0;
 	height: 1px;
 	border: none;
-	background: #eee;
+	background: #e1e8ed;
 }
 
 /* "Fading" header *
@@ -43,7 +44,7 @@ hr {
 }
 /* end fading header */
 
-#header { background: #222; }
+#header { background: #292f33; }
 #header .root-link {
 	display: block;
 	text-align: center;
@@ -53,15 +54,15 @@ hr {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	border: 3px solid #444;
+	border: 3px solid #66757f;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
 	border-radius: 100%;
 	background: url(http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg?size=100) no-repeat center; /* gravatar: root@zykadelic.com */
 	background-size: 100%;
-	-webkit-box-shadow: 0 0 20px #333;
-	-moz-box-shadow: 0 0 20px #333;
-	box-shadow: 0 0 20px #333;
+	-webkit-box-shadow: 0 0 20px #292f33;
+	-moz-box-shadow: 0 0 20px #292f33;
+	box-shadow: 0 0 20px #292f33;
 	-webkit-transition: border 1s .1s, box-shadow 1s .1s;
 	-moz-transition: border 1s .1s, box-shadow 1s .1s;
 	transition: border 1s .1s, box-shadow 1s .1s;
@@ -80,7 +81,7 @@ hr {
 }
 #header .title {
 	margin: 0;
-	color: #eee;
+	color: #f5f8fa;
 	font-size: 36px;
 	font-weight: 600;
 	line-height: 40px;
@@ -89,7 +90,7 @@ hr {
 }
 #header .subtitle {
 	margin: 10px 0 0;
-	color: #ccc;
+	color: #e1e8ed;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: normal;
@@ -114,7 +115,6 @@ hr {
 
 #bio-section {
 	padding-top: 30px;
-	color: #666;
 	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
 	text-align: justify;
