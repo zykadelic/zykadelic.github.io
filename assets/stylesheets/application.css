@@ -63,8 +63,8 @@ hr {
 	-webkit-box-shadow: 0 0 20px #292f33;
 	-moz-box-shadow: 0 0 20px #292f33;
 	box-shadow: 0 0 20px #292f33;
-	-webkit-transition: border 1s .1s, box-shadow 1s .1s;
-	-moz-transition: border 1s .1s, box-shadow 1s .1s;
+	-webkit-transition: border 1s .1s, -webkit-box-shadow 1s .1s;
+	-moz-transition: border 1s .1s, -moz-box-shadow 1s .1s;
 	transition: border 1s .1s, box-shadow 1s .1s;
 }
 #header .root-link:hover .avatar {
