@@ -44,7 +44,10 @@ hr {
 }
 /* end fading header */
 
-#header { background: #292f33; }
+#header {
+	background: #292f33 url(../images/cover.jpg) repeat center;
+	background-size: cover;
+}
 #header .root-link {
 	display: block;
 	text-align: center;
