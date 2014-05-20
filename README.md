@@ -1,2 +1,2 @@
-zykadelic.github.com
+zykadelic.com
 ====================
