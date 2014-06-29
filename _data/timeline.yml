@@ -1,0 +1,48 @@
+- role: Web Developer internship
+  company: Mozoomi
+  city: Stockholm
+  start_date: 2010-03-01
+  end_date: 2010-06-01
+  description:
+  - My second year of high school included a 10 week internship. Me and three classmates met up with Mozoomi and we started working together. My main responsibility was the front end development of their product website, working with XHTML, CSS and jQuery.
+
+- role: Web Developer
+  company: Mozoomi
+  city: Stockholm
+  start_date: 2010-06-01
+  end_date: 2011-06-01
+  description:
+  - My then recent internship led me to a part-time employment here, in parallel with school. While hired as a front end developer of their product website, working with XHTML, CSS and jQuery, I have also written some of the back end code, in PHP, and produced some of the graphics.
+
+- role: Developer internship
+  company: The Company P
+  city: Stockholm
+  start_date: 2010-09-01
+  end_date: 2010-12-01
+  description:
+  - My third year of high school also included a 10 week internship. The teacher of the web development class I was in recommended The Company P to take me in as an intern.
+  - With the focus of learning Ruby and Ruby on Rails, I also learned many other aspects of being a professional developer, such as agile development, project management, working with a client, SCRUM methodologies, object oriented programming, RESTful programming, application design, interaction design, version control systems (Git and Subversion) and deploying with Heroku.
+
+- role: Developer
+  company: Qubator
+  city: Stockholm
+  start_date: 2011-06-01
+  end_date: 2012-06-01
+  description:
+  - After the internship within The Company P, the development team of the company migrated to Qubator. This coincided with my high school graduation, and Qubator quickly decided to take me in to their core team as a full-time developer.
+  - My main areas have been front end development (HTML5, CSS3, JavaScript/jQuery) and back end development (Ruby on Rails and digging deeper down the Rails framework), though further interaction design, application design, project management and working with clients have been common.
+
+- role: Developer
+  company: Monkeydancers
+  city: Stockholm
+  start_date: 2012-06-01
+  end_date: 2013-11-01
+  description:
+  - Developing back end with Ruby on Rails and front end with HTML5, CSS3 and JavaScript/jQuery. Titled internally as their “front end ninja”, I’m working a lot with context-based and modularized CSS. Other tasks such as project management, product development, application design, and some graphical design have also made their appearances.
+
+- role: Developer
+  company: ProActive Health Partner
+  city: Stockholm
+  start_date: 2013-11-01
+  description:
+  - Lead front end developer within the core team of the company's two web services. End to end development.
