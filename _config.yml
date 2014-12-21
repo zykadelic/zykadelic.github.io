@@ -1,0 +1,5 @@
+# Build settings
+exclude:
+  - CNAME
+  - Gemfile*
+  - README.md
