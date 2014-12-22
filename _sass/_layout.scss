@@ -33,21 +33,6 @@ hr {
 	background: $color-grayLighter;
 }
 
-// "Fading" header
-// #header {
-// 	position: fixed;
-// 	top: 0;
-// 	z-index: 0;
-// 	width: 100%;
-// 	height: 220px;
-// }
-// #main {
-// 	position: relative;
-// 	z-index: 1;
-// 	margin-top: 219px; // must be less than height of #header because of Safari-bug
-// }
-// end fading header
-
 #header {
 	background: $color-grayDarkest url('/assets/images/cover.jpg') repeat center;
 	background-size: cover;
