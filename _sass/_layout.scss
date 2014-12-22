@@ -43,11 +43,12 @@ body {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	border: 3px solid $color-grayDarker;
+	padding: 4px;
 	@include border-radius(100%);
-	background: url('#{$imageUrl}?size=100') no-repeat center;
+	background: $color-grayDarkest url('#{$imageUrl}?size=100') no-repeat center;
 	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=200'); }
-	background-size: 100%;
+	background-size: 100px;
+	background-clip: content-box;
 	@include box-shadow(0 0 20px $color-grayDarkest);
 }
 .headerSection-title {
