@@ -1,39 +1,37 @@
 ---
 ---
 
-<section id="bio-section" class="page-section page-wrapper">
-  {% capture bio %}{% include bio.md %}{% endcapture %}
-  {{ bio | markdownify }}
+<section class="pageSection">
+  <div class="contentWrapper contentWrapper--moreSpacing markdownContent">
+    {% capture bio %}{% include bio.md %}{% endcapture %}
+    {{ bio | markdownify }}
+  </div>
 </section>
 
-<hr>
-
-<section id="timeline-section" class="page-section">
-  <div class="page-wrapper">
-    <h1 class="section-title">Timeline</h1>
-    <div class="clr"></div>
-
-    <ol class="timeline-list">
+<section class="pageSection">
+  <div class="contentWrapper">
+    <h1 class="sectionTitle">Timeline</h1>
+    <ol class="timeline">
       {% for item in site.data.timeline reversed %}
         <li class="timeline-item {% unless item.end_date %}present{% endunless %}">
-          <h1 class="title">
+          <h1 class="timeline-item-title">
             {{ item.role | replace: ' ', '&nbsp;' }}
             @&nbsp;{{ item.company | replace: ' ', '&nbsp;' }}
           </h1>
 
-          <h2 class="subtitle">
+          <h2 class="timeline-item-subtitle">
             {{ item.start_date | date: '%b %Y' }} -
             {% if item.end_date %}
               {{ item.end_date | date: '%b %Y' }}
             {% else %}
               Present
             {% endif %}
-            <span class="split"></span>
+            <span class="timeline-item-subtitle-split"></span>
             {{ item.city }}
           </h2>
 
           {% for paragraph in item.description %}
-            <p class="description">{{ paragraph }}</p>
+            <p class="timeline-item-description">{{ paragraph }}</p>
           {% endfor %}
         </li>
       {% endfor %}

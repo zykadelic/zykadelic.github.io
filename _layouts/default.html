@@ -15,20 +15,20 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<header id="header" class="page-section">
-		<div class="page-wrapper">
-			<a href="/" class="root-link">
-				<div class="avatar"></div>
-				<h1 class="title">Andreas Fransson</h1>
-				<h2 class="subtitle">Developer &bull; Stockholm, SE</h2>
+	<header class="headerSection">
+		<div class="contentWrapper">
+			<a href="/" class="headerSection-rootLink">
+				<div class="headerSection-avatar"></div>
+				<h1 class="headerSection-title">Andreas Fransson</h1>
+				<h2 class="headerSection-subtitle">Developer &bull; Stockholm, SE</h2>
 			</a>
 		</div>
 	</header>
 
 
-	<div id="main" role="main">
-		<nav id="contact-section" class="page-section">
-			<div class="page-wrapper">
+	<div role="main">
+		<nav class="socialBar">
+			<div class="contentWrapper contentWrapper--noSpacing">
 				<a href="mailto:{{ site.data.contact.email }}" target="_blank" title="Send me an email" class="icon icon--email">Email</a>
 				<a href="{{ site.data.contact.twitter }}" target="_blank" title="Tweet me" class="icon icon--twitter">Twitter</a>
 				<a href="{{ site.data.contact.github }}" target="_blank" title="Read my open source projects" class="icon icon--github">GitHub</a>
