@@ -2,12 +2,8 @@
 ---
 
 <section id="bio-section" class="page-section page-wrapper">
-  <p>
-    Hello! I’m a web developer with high quality standards, a passion for the craft, and four years of professional experience.
-  </p>
-  <p>
-    The majority of my works are written in <em>Ruby on Rails</em>, elegantly presented using leading front end technologies such as <em>HTML5</em>, <em>CSS3</em>, and <em>JavaScript&nbsp;/&nbsp;jQuery</em>.
-  </p>
+  {% capture bio %}{% include bio.md %}{% endcapture %}
+  {{ bio | markdownify }}
 </section>
 
 <hr>
