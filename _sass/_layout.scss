@@ -26,8 +26,8 @@ body {
 	padding-bottom: 0;
 }
 .contentWrapper--moreSpacing {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .headerSection {
@@ -44,6 +44,7 @@ body {
 	width: $size + px;
 	height: $size + px;
 	padding: 4px;
+	margin-bottom: 4px;
 	@include border-radius(100%);
 	background: $color-grayDarkest url('#{$imageUrl}?size=#{$size}') no-repeat center;
 	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=#{$size * 2}'); }
@@ -61,7 +62,7 @@ body {
 	letter-spacing: -1px;
 }
 .headerSection-subtitle {
-	margin: 10px 0 0;
+	margin: 6px 0 0;
 	color: $color-grayLighter;
 	font-size: 14px;
 	font-weight: 300;
@@ -98,7 +99,7 @@ body {
 
 .markdownContent {
 	p {
-		margin: 0 0 16px;
+		margin: 0 0 18px;
 		font-family: $fontFamily-roboto;
 		font-size: 15px;
 		text-align: justify;
