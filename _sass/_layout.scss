@@ -1,21 +1,33 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto+Slab:300,400);
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto+Slab:300,400');
 
+
+//== Short-hands
+// http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+@mixin respond-to($media) {
+	@if $media == retina {
+		@media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5) { @content; }
+	}
+}
+
+
+//== Variables
+$fontFamily-openSans: 'Open Sans', sans-serif;
+$fontFamily-roboto: 'Roboto Slab', serif;
+
+
+//== Styles
 body {
 	color: #292f33;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $fontFamily-openSans;
 	font-weight: 300;
 }
 .page-section {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	@include box-sizing(border-box);
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 .page-wrapper {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	@include box-sizing(border-box);
 	width: 100%;
 	max-width: 640px;
 	padding-right: 20px;
@@ -29,23 +41,23 @@ hr {
 	background: #e1e8ed;
 }
 
-/* "Fading" header *
-#header {
-	position: fixed;
-	top: 0;
-	z-index: 0;
-	width: 100%;
-	height: 220px;
-}
-#main {
-	position: relative;
-	z-index: 1;
-	margin-top: 219px; /* must be less than height of #header because of Safari-bug *
-}
-/* end fading header */
+// "Fading" header
+// #header {
+// 	position: fixed;
+// 	top: 0;
+// 	z-index: 0;
+// 	width: 100%;
+// 	height: 220px;
+// }
+// #main {
+// 	position: relative;
+// 	z-index: 1;
+// 	margin-top: 219px; // must be less than height of #header because of Safari-bug
+// }
+// end fading header
 
 #header {
-	background: #292f33 url(../images/cover.jpg) repeat center;
+	background: #292f33 url('/assets/images/cover.jpg') repeat center;
 	background-size: cover;
 }
 #header .root-link {
@@ -54,33 +66,25 @@ hr {
 	text-decoration: none;
 }
 #header .avatar {
+	// gravatar: root@zykadelic.com
+	$imageUrl: 'http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg';
+
 	display: inline-block;
 	width: 100px;
 	height: 100px;
 	border: 3px solid #66757f;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	border-radius: 100%;
-	background: url(http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg?size=100) no-repeat center; /* gravatar: root@zykadelic.com */
+	@include border-radius(100%);
+	background: url('#{$imageUrl}?size=100') no-repeat center;
+	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=200'); }
 	background-size: 100%;
-	-webkit-box-shadow: 0 0 20px #292f33;
-	-moz-box-shadow: 0 0 20px #292f33;
-	box-shadow: 0 0 20px #292f33;
-	-webkit-transition: border 1s .1s, -webkit-box-shadow 1s .1s;
-	-moz-transition: border 1s .1s, -moz-box-shadow 1s .1s;
-	transition: border 1s .1s, box-shadow 1s .1s;
+	@include box-shadow(0 0 20px #292f33);
+	@include transition(border 1s .1s, box-shadow 1s .1s);
 }
 #header .root-link:hover .avatar {
 	border-color: #55acee;
-	-webkit-box-shadow: 0 0 0 #55acee;
-	-moz-box-shadow: 0 0 0 #55acee;
-	box-shadow: 0 0 0 #55acee;
-	-webkit-transition-duration: 0;
-	-moz-transition-duration: 0;
-	transition-duration: 0;
-	-webkit-transition-delay: 0;
-	-moz-transition-delay: 0;
-	transition-delay: 0;
+	@include box-shadow(0 0 0 #55acee);
+	@include transition-duration(0);
+	@include transition-delay(0);
 }
 #header .title {
 	margin: 0;
@@ -127,7 +131,7 @@ hr {
 #bio-section {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-family: 'Roboto Slab', serif;
+	font-family: $fontFamily-roboto;
 	font-size: 15px;
 	text-align: justify;
 }
@@ -152,13 +156,9 @@ hr {
 	display: block;
 	padding: 10px 12px 14px;
 	border-bottom: 1px solid #ccd6dd;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	@include border-radius(4px);
 	background: #fff;
-	-webkit-box-shadow: 0 0 2px #ccd6dd;
-	-moz-box-shadow: 0 0 2px #ccd6dd;
-	box-shadow: 0 0 2px #ccd6dd;
+	@include box-shadow(0 0 2px #ccd6dd);
 }
 #timeline-section .timeline-list .timeline-item + .timeline-item { margin-top: 20px; }
 #timeline-section .timeline-list .timeline-item:before {
@@ -183,20 +183,14 @@ hr {
 #timeline-section .timeline-list .timeline-item .subtitle {
 	margin: 0;
 	color: #8899a6;
-	font-family: 'Roboto Slab', serif;
+	font-family: $fontFamily-roboto;
 	font-size: 12px;
 	font-weight: 300;
 }
 #timeline-section .timeline-list .timeline-item .subtitle .split { margin: 0 2px; }
-#timeline-section .timeline-list .timeline-item .subtitle .split:before { content: "\2022"; } /* &bull; */
+#timeline-section .timeline-list .timeline-item .subtitle .split:before { content: "\2022"; } // &bull;
 #timeline-section .timeline-list .timeline-item .description {
 	margin: 6px 0 0;
 	font-size: 14px;
 }
 #timeline-section .timeline-list .timeline-item .description + .description { margin-top: 14px; }
-
-
-/* Retina graphics */
-@media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5){
-	#header .avatar { background-image: url(http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg?size=200); }
-}
