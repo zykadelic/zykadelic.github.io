@@ -34,18 +34,7 @@ body {
 	@include box-sizing(border-box);
 	background: $color-grayDarkest url('/assets/images/cover.jpg') repeat center;
 	background-size: cover;
-}
-.headerSection-rootLink {
-	display: block;
 	text-align: center;
-	text-decoration: none;
-
-	&:hover .headerSection-avatar {
-		border-color: $color-primary;
-		@include box-shadow(0 0 0 $color-primary);
-		@include transition-duration(0);
-		@include transition-delay(0);
-	}
 }
 .headerSection-avatar {
 	// gravatar: root@zykadelic.com
@@ -60,7 +49,6 @@ body {
 	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=200'); }
 	background-size: 100%;
 	@include box-shadow(0 0 20px $color-grayDarkest);
-	@include transition(border 1s .1s, box-shadow 1s .1s);
 }
 .headerSection-title {
 	margin: 0;
@@ -68,7 +56,6 @@ body {
 	font-size: 36px;
 	font-weight: 600;
 	line-height: 40px;
-	text-align: center;
 	text-shadow: 0 1px 8px transparentize($color-black, .5);
 	letter-spacing: -1px;
 }
@@ -78,7 +65,6 @@ body {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: normal;
-	text-align: center;
 	text-shadow: 0 1px 5px $color-black;
 }
 
