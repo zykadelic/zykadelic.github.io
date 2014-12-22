@@ -37,17 +37,17 @@ body {
 	text-align: center;
 }
 .headerSection-avatar {
-	// gravatar: root@zykadelic.com
-	$imageUrl: 'http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg';
+	$size: 100;
+	$imageUrl: 'http://en.gravatar.com/avatar/82d3e0d3bd060fae9d346dcf745edff0.jpg'; // gravatar: root@zykadelic.com
 
 	display: inline-block;
-	width: 100px;
-	height: 100px;
+	width: $size + px;
+	height: $size + px;
 	padding: 4px;
 	@include border-radius(100%);
-	background: $color-grayDarkest url('#{$imageUrl}?size=100') no-repeat center;
-	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=200'); }
-	background-size: 100px;
+	background: $color-grayDarkest url('#{$imageUrl}?size=#{$size}') no-repeat center;
+	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=#{$size * 2}'); }
+	background-size: $size + px;
 	background-clip: content-box;
 	@include box-shadow(0 0 20px $color-grayDarkest);
 }
