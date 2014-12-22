@@ -17,7 +17,7 @@ $fontFamily-roboto: 'Roboto Slab', serif;
 
 //== Styles
 body {
-	color: #292f33;
+	color: $color-grayDarkest;
 	font-family: $fontFamily-openSans;
 	font-weight: 300;
 }
@@ -38,7 +38,7 @@ hr {
 	margin: 0;
 	height: 1px;
 	border: none;
-	background: #e1e8ed;
+	background: $color-grayLighter;
 }
 
 // "Fading" header
@@ -57,7 +57,7 @@ hr {
 // end fading header
 
 #header {
-	background: #292f33 url('/assets/images/cover.jpg') repeat center;
+	background: $color-grayDarkest url('/assets/images/cover.jpg') repeat center;
 	background-size: cover;
 }
 #header .root-link {
@@ -72,45 +72,45 @@ hr {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	border: 3px solid #66757f;
+	border: 3px solid $color-grayDarker;
 	@include border-radius(100%);
 	background: url('#{$imageUrl}?size=100') no-repeat center;
 	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=200'); }
 	background-size: 100%;
-	@include box-shadow(0 0 20px #292f33);
+	@include box-shadow(0 0 20px $color-grayDarkest);
 	@include transition(border 1s .1s, box-shadow 1s .1s);
 }
 #header .root-link:hover .avatar {
-	border-color: #55acee;
-	@include box-shadow(0 0 0 #55acee);
+	border-color: $color-primary;
+	@include box-shadow(0 0 0 $color-primary);
 	@include transition-duration(0);
 	@include transition-delay(0);
 }
 #header .title {
 	margin: 0;
-	color: #f5f8fa;
+	color: $color-grayLightest;
 	font-size: 36px;
 	font-weight: 600;
 	line-height: 40px;
 	text-align: center;
-	text-shadow: 0 1px 8px rgba(0,0,0, .5);
+	text-shadow: 0 1px 8px transparentize($color-black, .5);
 	letter-spacing: -1px;
 }
 #header .subtitle {
 	margin: 10px 0 0;
-	color: #e1e8ed;
+	color: $color-grayLighter;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: normal;
 	text-align: center;
-	text-shadow: 0 1px 5px #000;
+	text-shadow: 0 1px 5px $color-black;
 }
 
 
-#main { background: #fff; }
+#main { background: $color-white; }
 #main .page-section .section-title {
 	margin: 0 0 8px;
-	color: #66757f;
+	color: $color-grayDarker;
 	font-size: 28px;
 	font-weight: 600;
 }
@@ -118,7 +118,7 @@ hr {
 
 #contact-section {
 	padding: 0;
-	background: #55acee;
+	background: $color-primary;
 	text-align: center;
 }
 #contact-section .page-wrapper {
@@ -142,23 +142,23 @@ hr {
 }
 
 
-#timeline-section { background: #f5f8fa; }
+#timeline-section { background: $color-grayLightest; }
 #timeline-section .timeline-list {
 	padding: 5px 0 10px 15px;
 	margin: 5px 0 15px 4px;
 	border: 0 solid transparent;
 	border-width: 1px 3px 5px;
-	border-left-color: #55acee;
+	border-left-color: $color-primary;
 	list-style: none;
 }
 #timeline-section .timeline-list .timeline-item {
 	position: relative;
 	display: block;
 	padding: 10px 12px 14px;
-	border-bottom: 1px solid #ccd6dd;
+	border-bottom: 1px solid $color-grayLight;
 	@include border-radius(4px);
-	background: #fff;
-	@include box-shadow(0 0 2px #ccd6dd);
+	background: $color-white;
+	@include box-shadow(0 0 2px $color-grayLight);
 }
 #timeline-section .timeline-list .timeline-item + .timeline-item { margin-top: 20px; }
 #timeline-section .timeline-list .timeline-item:before {
@@ -168,11 +168,11 @@ hr {
 	right: 100%;
 	display: block;
 	width: 15px;
-	border-bottom: 3px solid #55acee;
+	border-bottom: 3px solid $color-primary;
 }
 #timeline-section .timeline-list .timeline-item.present {
 	border-bottom-width: 2px;
-	border-bottom-color: #55acee;
+	border-bottom-color: $color-primary;
 }
 
 #timeline-section .timeline-list .timeline-item .title {
@@ -182,7 +182,7 @@ hr {
 }
 #timeline-section .timeline-list .timeline-item .subtitle {
 	margin: 0;
-	color: #8899a6;
+	color: $color-grayDark;
 	font-family: $fontFamily-roboto;
 	font-size: 12px;
 	font-weight: 300;
