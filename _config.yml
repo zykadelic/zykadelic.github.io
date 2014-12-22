@@ -4,3 +4,8 @@ exclude:
   - CNAME
   - Gemfile*
   - README.md
+defaults:
+  - scope:
+      path: '' # everything
+    values:
+      layout: default

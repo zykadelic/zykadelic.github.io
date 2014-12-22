@@ -1,104 +1,46 @@
 ---
 ---
-<!DOCTYPE html>
-<html class="no-js">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>@zykadelic</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/assets/stylesheets/main.css">
-  <script src="/assets/javascripts/plugins/modernizr-2.6.2.min.js"></script>
-</head>
-<body>
-  <!--[if lte IE 9]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<section id="bio-section" class="page-section page-wrapper">
+  <p>
+    Hello! I’m a web developer with high quality standards, a passion for the craft, and four years of professional experience.
+  </p>
+  <p>
+    The majority of my works are written in <em>Ruby on Rails</em>, elegantly presented using leading front end technologies such as <em>HTML5</em>, <em>CSS3</em>, and <em>JavaScript&nbsp;/&nbsp;jQuery</em>.
+  </p>
+</section>
 
-  <header id="header" class="page-section">
-    <div class="page-wrapper">
-      <a href="/" class="root-link">
-        <div class="avatar"></div>
-        <h1 class="title">Andreas Fransson</h1>
-        <h2 class="subtitle">Developer &bull; Stockholm, SE</h2>
-      </a>
-    </div>
-  </header>
+<hr>
 
+<section id="timeline-section" class="page-section">
+  <div class="page-wrapper">
+    <h1 class="section-title">Timeline</h1>
+    <div class="clr"></div>
 
-  <div id="main" role="main">
-    <nav id="contact-section" class="page-section">
-      <div class="page-wrapper">
-        <a href="mailto:{{ site.data.contact.email }}" target="_blank" title="Send me an email" class="icon icon--email">Email</a>
-        <a href="{{ site.data.contact.twitter }}" target="_blank" title="Tweet me" class="icon icon--twitter">Twitter</a>
-        <a href="{{ site.data.contact.github }}" target="_blank" title="Read my open source projects" class="icon icon--github">GitHub</a>
-        <a href="{{ site.data.contact.careers }}" target="_blank" title="Read my résumé" class="icon icon--careers">Careers 2.0</a>
-        <a href="{{ site.data.contact.stackoverflow }}" target="_blank" title="StackOverflow goodies" class="icon icon--stackoverflow">StackOverflow</a>
-        <a href="{{ site.data.contact.coderwall }}" target="_blank" title="View my code achievements" class="icon icon--coderwall">Coderwall</a>
-        <a href="{{ site.data.contact.linkedin }}" target="_blank" title="My LinkedIn profile" class="icon icon--linkedin">LinkedIn</a>
-      </div>
-    </nav>
-    
-    <section id="bio-section" class="page-section page-wrapper">
-      <p>
-        Hello! I’m a web developer with high quality standards, a passion for the craft, and four years of professional experience.
-      </p>
-      <p>
-        The majority of my works are written in <em>Ruby on Rails</em>, elegantly presented using leading front end technologies such as <em>HTML5</em>, <em>CSS3</em>, and <em>JavaScript&nbsp;/&nbsp;jQuery</em>.
-      </p>
-    </section>
+    <ol class="timeline-list">
+      {% for item in site.data.timeline reversed %}
+        <li class="timeline-item {% unless item.end_date %}present{% endunless %}">
+          <h1 class="title">
+            {{ item.role | replace: ' ', '&nbsp;' }}
+            @&nbsp;{{ item.company | replace: ' ', '&nbsp;' }}
+          </h1>
 
-    <hr>
+          <h2 class="subtitle">
+            {{ item.start_date | date: '%b %Y' }} -
+            {% if item.end_date %}
+              {{ item.end_date | date: '%b %Y' }}
+            {% else %}
+              Present
+            {% endif %}
+            <span class="split"></span>
+            {{ item.city }}
+          </h2>
 
-    <section id="timeline-section" class="page-section">
-      <div class="page-wrapper">
-        <h1 class="section-title">Timeline</h1>
-        <div class="clr"></div>
-
-        <ol class="timeline-list">
-          {% for item in site.data.timeline reversed %}
-            <li class="timeline-item {% unless item.end_date %}present{% endunless %}">
-              <h1 class="title">
-                {{ item.role | replace: ' ', '&nbsp;' }}
-                @&nbsp;{{ item.company | replace: ' ', '&nbsp;' }}
-              </h1>
-
-              <h2 class="subtitle">
-                {{ item.start_date | date: '%b %Y' }} -
-                {% if item.end_date %}
-                  {{ item.end_date | date: '%b %Y' }}
-                {% else %}
-                  Present
-                {% endif %}
-                <span class="split"></span>
-                {{ item.city }}
-              </h2>
-
-              {% for paragraph in item.description %}
-                <p class="description">{{ paragraph }}</p>
-              {% endfor %}
-            </li>
+          {% for paragraph in item.description %}
+            <p class="description">{{ paragraph }}</p>
           {% endfor %}
-        </ol>
-      </div>
-    </section>
+        </li>
+      {% endfor %}
+    </ol>
   </div>
-
-  <script src="/assets/javascripts/plugins/jquery-1.10.2.min.js"></script>
-  <script src="/assets/javascripts/plugins.js"></script>
-  <script src="/assets/javascripts/script.js"></script>
-
-  <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-31649925-1', 'zykadelic.com');
-    ga('send', 'pageview');
-  </script>
-</body>
-</html>
+</section>
