@@ -13,5 +13,5 @@
 }
 
 @each $icon in email, twitter, github, stackoverflow, careers, coderwall, linkedin {
-	.icon.#{$icon} { background-image: url('/assets/images/icons/#{$icon}.svg'); }
+	.icon--#{$icon} { background-image: url('/assets/images/icons/#{$icon}.svg'); }
 }
