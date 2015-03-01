@@ -15,6 +15,9 @@
       {% for item in site.data.timeline reversed %}
         <li class="timeline-item {% unless item.end_date %}present{% endunless %}">
           <h1 class="timeline-item-title">
+            {% if item.type %}
+              <span class="icon icon--{{ item.type }}"></span>
+            {% endif %}
             {{ item.role | replace: ' ', '&nbsp;' }}
             @&nbsp;{{ item.company | replace: ' ', '&nbsp;' }}
           </h1>
