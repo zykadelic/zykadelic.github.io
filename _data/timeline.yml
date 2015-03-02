@@ -6,7 +6,7 @@
   end_date: 2011-06-01
   description:
   - Studied photography, philosophy, psychology, graphical design, 3D design- and animation, and web development. Majored in the latter, where I substited the class at multiple occasions and received a scholarship at graduation.
-  - Learned HTML, CSS, JavaScript, ActionScript, PHP, MySQL, and Adobe Photoshop. Experimented with virtual reality.
+  - Learned HTML, CSS, JavaScript, ActionScript, PHP, MySQL, and Autodesk Maya. Experimented with virtual reality.
 
 - role: Web Developer
   company: Mozoomi
@@ -17,14 +17,14 @@
   - Started as an internship during my second year of high school, continued as a part-time employment. Main front end developer of their product website.
   - Worked with HTML, CSS, JavaScript, PHP, and MySQL. Produced some of the graphics. Learned a lot more about development with PHP and MySQL.
 
-- role: Developer internship
+- role: Developer intern
   company: The Company P
   city: Stockholm
   start_date: 2010-09-01
   end_date: 2010-12-01
   description:
-  - My third year of high school also included a 10 week internship. The teacher of the web development class I was in recommended The Company P to take me in as an intern.
-  - With the focus of learning Ruby and Ruby on Rails, I also learned many other aspects of being a professional developer, such as agile development, project management, working with a client, SCRUM methodologies, object oriented programming, RESTful programming, application design, interaction design, version control systems (Git and Subversion) and deploying with Heroku.
+  - Internship during my third year of high school. Personally recommended by my web development class teacher.
+  - Learned object oriented programming with Ruby on Rails, Git and SVN, RESTful programming, agile- and SCRUM methodologies, application design, project management, deploying with Heroku, and some interaction design.
 
 - role: Developer
   company: Qubator
@@ -32,8 +32,8 @@
   start_date: 2011-06-01
   end_date: 2012-06-01
   description:
-  - After the internship within The Company P, the development team of the company migrated to Qubator. This coincided with my high school graduation, and Qubator quickly decided to take me in to their core team as a full-time developer.
-  - My main areas have been front end development (HTML5, CSS3, JavaScript/jQuery) and back end development (Ruby on Rails and digging deeper down the Rails framework), though further interaction design, application design, project management and working with clients have been common.
+  - Recruited into the core team by and with the same developers that taught me at The Company P. A startup building <a href="http://qubator.com/qengine.html" target="_blank">Q-Engine</a> while self-funded by consultancy.
+  - Worked with HTML, CSS, JavaScript, and Ruby on Rails. Learned Redis, Resque, further project management, and a bit of Objective C. Got much deeper knowledge about JavaScript and Ruby on Rails.
 
 - role: Developer
   company: Monkeydancers
@@ -41,11 +41,13 @@
   start_date: 2012-06-01
   end_date: 2013-11-01
   description:
-  - Developing back end with Ruby on Rails and front end with HTML5, CSS3 and JavaScript/jQuery. Titled internally as their “front end ninja”, I’m working a lot with context-based and modularized CSS. Other tasks such as project management, product development, application design, and some graphical design have also made their appearances.
+  - As the Qubator startup didn’t work out, the development team formed the web agency Monkeydancers.
+  - Worked with HTML, CSS, JavaScript, and Ruby on Rails. Got deeper knowledge of Redis. Designed my first public REST API.
 
 - role: Developer
-  company: ProActive Health Partner
+  company: Proactive Health
   city: Stockholm
   start_date: 2013-11-01
   description:
-  - Lead front end developer within the core team of the company's two web services, doing both front and back end development.
+  - Originally a client of Monkeydancers. Part of a team who built two of the company’s core services from the ground up; <a href="https://gojepp.com/" target="_blank">Jepp</a> and <a href="https://gojepp.com/how/insights/" target="_blank">Insights</a>.
+  - Worked with HTML, CSS, JavaScript, Ruby on Rails, and Jekyll. Learned iOS development with RubyMotion.
