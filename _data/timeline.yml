@@ -8,21 +8,14 @@
   - Studied photography, philosophy, psychology, graphical design, 3D design- and animation, and web development. Majored in the latter, where I substited the class at multiple occasions and received a scholarship at graduation.
   - Learned HTML, CSS, JavaScript, ActionScript, PHP, MySQL, and Adobe Photoshop. Experimented with virtual reality.
 
-- role: Web Developer internship
-  company: Mozoomi
-  city: Stockholm
-  start_date: 2010-03-01
-  end_date: 2010-06-01
-  description:
-  - My second year of high school included a 10 week internship. Me and three classmates met up with Mozoomi and we started working together. My main responsibility was the front end development of their product website, working with XHTML, CSS and jQuery.
-
 - role: Web Developer
   company: Mozoomi
   city: Stockholm
-  start_date: 2010-06-01
+  start_date: 2010-03-01
   end_date: 2011-06-01
   description:
-  - My then recent internship led me to a part-time employment here, in parallel with school. While hired as a front end developer of their product website, working with XHTML, CSS and jQuery, I have also written some of the back end code, in PHP, and produced some of the graphics.
+  - Started as an internship during my second year of high school, continued as a part-time employment. Main front end developer of their product website.
+  - Worked with HTML, CSS, JavaScript, PHP, and MySQL. Produced some of the graphics. Learned a lot more about development with PHP and MySQL.
 
 - role: Developer internship
   company: The Company P
