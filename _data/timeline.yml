@@ -32,7 +32,7 @@
   start_date: 2011-06-01
   end_date: 2012-06-01
   description:
-  - Recruited into the core team by and with the same developers that taught me at The Company P. A startup building <a href="http://qubator.com/qengine.html" target="_blank">Q-Engine</a> while self-funded by consultancy.
+  - Recruited into the core team by and with the same developers that taught me at The Company P. A startup building <a href="http://qubator.com/qengine.html" target="_blank">Q-Engine</a> while self-funded by consultancy. Created campaigns for clients such as Scandic and Halebop.
   - Worked with HTML, CSS, JavaScript, and Ruby on Rails. Learned Redis, Resque, further project management, and a bit of Objective C. Got much deeper knowledge about JavaScript and Ruby on Rails.
 
 - role: Developer
@@ -41,7 +41,8 @@
   start_date: 2012-06-01
   end_date: 2013-11-01
   description:
-  - As the Qubator startup didn’t work out, the development team formed the web agency Monkeydancers.
+  - The development team from Qubator moved towards a full fledged web agency, and formed Monkeydancers.
+  - Made several campaigns for Pepsi, among others, of which one was a huge success and got viral growth.
   - Worked with HTML, CSS, JavaScript, and Ruby on Rails. Got deeper knowledge of Redis. Designed my first public REST API.
 
 - role: Developer
