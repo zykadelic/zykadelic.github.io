@@ -12,6 +12,6 @@
 	line-height: normal;
 }
 
-@each $icon in email, twitter, github, stackoverflow, careers, coderwall, linkedin, education {
+@each $icon in email, twitter, github, stackoverflow, coderwall, linkedin, education {
 	.icon--#{$icon} { background-image: url('/assets/images/icons/#{$icon}.svg'); }
 }
