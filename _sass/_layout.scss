@@ -111,35 +111,74 @@ body {
 }
 
 .timeline {
-	padding: 5px 0 10px 15px;
-	margin: 13px 0 15px 4px;
-	border: 0 solid transparent;
-	border-width: 1px 3px 5px;
-	border-left-color: $color-primary;
+	$indicator-size: 4px;
+
+	position: relative;
 	list-style: none;
+	padding-left: 17px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: $indicator-size;
+		height: 100%;
+		background: $color-primary;
+		border-radius: $indicator-size / 2;
+	}
+	// Ellipsis-style ending of &::before
+	&::after {
+		$gradient-size: $indicator-size / 2;
+		$background-offset: $gradient-size / 2;
+		$background-size: $indicator-size * 1.5;
+		$margin: 1px;
+
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: block;
+		width: $indicator-size;
+		height: $background-size * 3;
+		background:
+			radial-gradient(rgba($color-primary, .6) $gradient-size, transparent $gradient-size),
+			radial-gradient(rgba($color-primary, .3) $gradient-size, transparent $gradient-size),
+			radial-gradient(rgba($color-primary, .2) $gradient-size, transparent $gradient-size);
+		background-position:
+			(-$background-offset) $margin,
+			(-$background-offset) ($background-size + $margin),
+			(-$background-offset) ($background-size * 2 + $margin);
+		background-size: $background-size $background-size;
+		background-repeat: no-repeat;
+	}
 }
 .timeline-item {
 	position: relative;
 	display: block;
 	padding: 10px 12px 14px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid $color-grayLight;
 	@include border-radius(4px);
 	background: $color-white;
-	@include box-shadow(0 0 2px $color-grayLight);
+	@include box-shadow(0 0 2px 0 $color-grayLight);
 
-	& + & { margin-top: 20px; }
-	&:before {
+	&.present {
+		border-bottom-width: 2px;
+		border-bottom-color: $color-primary;
+	}
+	&::before {
 		content: '';
 		position: absolute;
 		top: 20px;
 		right: 100%;
 		display: block;
-		width: 15px;
-		border-bottom: 3px solid $color-primary;
-	}
-	&.present {
-		border-bottom-width: 2px;
-		border-bottom-color: $color-primary;
+		width: 6px;
+		height: 6px;
+		background: $color-primary;
+		border-radius: 100%;
+		margin-right: 4px;
 	}
 }
 .timeline-item-title {
