@@ -29,8 +29,10 @@
             {% else %}
               Present
             {% endif %}
-            <span class="timeline-item-subtitle-split"></span>
-            {{ item.city }}
+            {% if false %}
+              <span class="timeline-item-subtitle-split"></span>
+              {{ item.city }}
+            {% endif %}
           </h2>
 
           {% for paragraph in item.description %}
