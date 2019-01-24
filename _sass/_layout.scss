@@ -161,7 +161,7 @@ body {
 .timeline-item {
 	position: relative;
 	display: block;
-	padding: 10px 12px 14px;
+	padding: 10px 12px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid $color-grayLight;
 	@include border-radius(4px);
@@ -191,7 +191,7 @@ body {
 	font-weight: 600;
 }
 .timeline-item-subtitle {
-	margin: 0;
+	margin-top: 0;
 	color: $color-grayDark;
 	font-family: $fontFamily-roboto;
 	font-size: 12px;
@@ -205,10 +205,7 @@ body {
 	}
 }
 .timeline-item-description {
-	margin: 6px 0 0;
 	font-size: 14px;
-
-	& + & { margin-top: 14px; }
 
 	a {
 		position: relative;

@@ -35,9 +35,9 @@
             {% endif %}
           </h2>
 
-          {% for paragraph in item.description %}
-            <p class="timeline-item-description">{{ paragraph }}</p>
-          {% endfor %}
+          <div class="timeline-item-description">
+            {{ item.description | markdownify }}
+          </div>
         </li>
       {% endfor %}
     </ol>
