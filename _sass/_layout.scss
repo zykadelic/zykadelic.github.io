@@ -207,6 +207,12 @@ body {
 .timeline-item-description {
 	font-size: 14px;
 
+	strong {
+		font-family: $fontFamily-roboto;
+		font-weight: 400;
+		font-style: normal;
+		white-space: nowrap;
+	}
 	a {
 		position: relative;
 		display: inline-block;

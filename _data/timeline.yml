@@ -5,9 +5,9 @@
   start_date: 2008-08-01
   end_date: 2011-06-01
   description: |
-    Studied photography, philosophy, psychology, graphical design, 3D design- and animation, and web development. Majored in the latter, where I substited the class at multiple occasions and received a scholarship at graduation.
+    Studied photography, philosophy, psychology, graphical design, 3D design- and animation, and web development. Majored in the latter, where I substited the class at multiple occasions, and received a scholarship in at graduation.
 
-    Learned HTML, CSS, JavaScript, ActionScript, PHP, MySQL, and Autodesk Maya. Experimented with augmented reality.
+    Learned **HTML**, **CSS**, **JavaScript**, **ActionScript**, **PHP**, **MySQL**, and **Autodesk Maya**. Experimented with augmented reality.
 
 - role: Web Developer
   company: Mozoomi
@@ -15,9 +15,9 @@
   start_date: 2010-03-01
   end_date: 2011-06-01
   description: |
-    Started as an internship during my second year of high school, continued as a part-time employment. Main front end developer of their product website.
+    Smartphone-focused startup. An internship that became a part-time employment during high school. Main front end developer of our product website. Digged deeper into server side development. Produced some of the graphics.
 
-    Worked with HTML, CSS, JavaScript, PHP, and MySQL. Produced some of the graphics. Learned a lot more about development with PHP and MySQL.
+    Worked with **HTML**, **CSS**, **JavaScript**, **PHP**, and **MySQL**.
 
 - role: Developer intern
   company: The Company P
@@ -25,9 +25,7 @@
   start_date: 2010-09-01
   end_date: 2010-12-01
   description: |
-    Internship during my third year of high school. Personally recommended by my web development class teacher.
-
-    Learned object oriented programming with Ruby on Rails, Git and SVN, RESTful programming, agile- and SCRUM methodologies, application design, project management, deploying with Heroku, and some interaction design.
+    A web agency internship during my third year of high school. Learned object oriented programming with **Ruby on Rails**, **Git** and **SVN**, **REST APIs**, **agile-** and **SCRUM** methodologies, **application design**, **project management**, and **interaction design**.
 
 - role: Developer
   company: Qubator
@@ -35,9 +33,9 @@
   start_date: 2011-06-01
   end_date: 2012-06-01
   description: |
-    Recruited into the core team by and with the same developers that taught me at The Company P. A startup building [Q-Engine](http://qubator.com/qengine.html) while self-funded by consultancy. Created campaigns for clients such as Scandic and Halebop.
+    Recruited into the core team of a web startup/agency. Front- and back end development on our own product, and on campaigns created for Scandic and Halebop, amongst others.
 
-    Worked with HTML, CSS, JavaScript, and Ruby on Rails. Learned Redis, Resque, further project management, and a bit of Objective C. Got much deeper knowledge about JavaScript and Ruby on Rails.
+    Worked with **HTML**, **CSS**, **JavaScript**, and **Ruby on Rails**. Got much deeper knowledge about the last two. Learned **Redis**, **Resque**, further **project management**, **interaction design**, and a bit of **Objective C**.
 
 - role: Developer
   company: Monkeydancers
@@ -45,17 +43,15 @@
   start_date: 2012-06-01
   end_date: 2013-11-01
   description: |
-    The development team from Qubator moved towards a full fledged web agency, and formed Monkeydancers.
+    Warped from Qubator, this turned into a full fledged web agency. Made several campaigns for Pepsi, among others, one of which achieved viral growth.
 
-    Made several campaigns for Pepsi, among others, of which one was a huge success and got viral growth.
-
-    Worked with HTML, CSS, JavaScript, and Ruby on Rails. Got deeper knowledge of Redis. Designed my first public REST API.
+    Worked with **HTML**, **CSS**, **JavaScript**, and **Ruby on Rails**. Got deeper knowledge of **Redis**. Designed my first public **REST API**.
 
 - role: Developer
   company: Proactive Health
   city: Stockholm
   start_date: 2013-11-01
   description: |
-    Originally a client of Monkeydancers. Part of a team who built two of the company’s core services from the ground up; [Jepp](https://gojepp.com/) and [Insights](https://gojepp.com/how/insights/).
+    Part of the core team that created the company’s digital products and services within company health care. The flagship service was running live across the Nordic countries.
 
-    Worked with HTML, CSS, JavaScript, Ruby on Rails, and Jekyll. Learned iOS development with RubyMotion.
+    Worked with **HTML**, **CSS**, **JavaScript**, **Ruby on Rails**, and **Jekyll**. Learned a lot more about **deployment** and maintaining the same code base for a longer time. Picked up some iOS development with **RubyMotion**.
