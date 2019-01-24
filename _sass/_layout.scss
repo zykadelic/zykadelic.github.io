@@ -83,6 +83,10 @@ body {
 
 .socialBar {
 	@include box-sizing(border-box);
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 100;
+	top: 0px;
 	padding: 15px 0;
 	background: $color-primary;
 	text-align: center;
