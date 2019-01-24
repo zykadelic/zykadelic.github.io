@@ -51,7 +51,17 @@
   company: Proactive Health
   city: Stockholm
   start_date: 2013-11-01
+  end_date: 2018-08-31
   description: |
     Part of the core team that created the company’s digital products and services within company health care. The flagship service was running live across the Nordic countries.
 
     Worked with **HTML**, **CSS**, **JavaScript**, **Ruby on Rails**, and **Jekyll**. Learned a lot more about **deployment** and maintaining the same code base for a longer time. Picked up some iOS development with **RubyMotion**.
+
+- role: System Developer
+  company: Euro Accident
+  city: Stockholm
+  start_date: 2018-09-01
+  description: |
+    A health insurance company that bought Proactive Health. Transformed Proactive Health’s products into a format befitting our business model.
+
+    Worked with **HTML**, **CSS**, **JavaScript**, **Ruby on Rails**, and **live deployment**.
