@@ -1,4 +1,4 @@
-Hello 👋 I’ve been building things on the Internet since 2009.
+Hello 👋 I’m building things on the Internet since 2009.
 
 I have mainly taken a deep-dive into vanilla front end technologies (such as *HTML5*, *CSS3/[Sass](https://sass-lang.com)*, *JavaScript/jQuery*), and the back end web framework *[Ruby on Rails](https://rubyonrails.org)*.
 
