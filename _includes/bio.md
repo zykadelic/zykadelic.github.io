@@ -6,4 +6,4 @@ I’ve learned both on my own accord and through working side by side with some 
 
 Besides the previously mentioned technologies, I’ve been using *MySQL/PostgreSQL*, *[Redis](https://redis.io)*, *[Node.js](https://nodejs.org/)*, *[Git](https://git-scm.com)*, a wide variety of *REST APIs* (including a couple of my own), as well as basic hosting and deployment on *Ubuntu* with *[Nginx](https://nginx.org/en/)*, *[Thin](https://github.com/macournoyer/thin)*, and *[Capistrano](https://capistranorb.com)*.
 
-My latest interests are the *[React](https://reactjs.org)* framework and digging deeper into product design.
+My latest interests are the *[React](https://reactjs.org)* framework and digging deeper into digital product design.
