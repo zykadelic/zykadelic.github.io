@@ -12,6 +12,7 @@ body {
 	color: $color-grayDarkest;
 	font-family: $fontFamily-openSans;
 	font-weight: 300;
+	line-height: 1.5;
 }
 
 .contentWrapper {
@@ -44,7 +45,7 @@ body {
 	width: $size + px;
 	height: $size + px;
 	padding: 4px;
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 	@include border-radius(100%);
 	background: $color-grayDarkest url('#{$imageUrl}?size=#{$size}') no-repeat center;
 	@include respond-to(retina) { background-image: url('#{$imageUrl}?size=#{$size * 2}'); }
@@ -55,18 +56,17 @@ body {
 .headerSection-title {
 	margin: 0;
 	color: $color-grayLightest;
-	font-size: 36px;
+	font-size: 2.5em;
 	font-weight: 600;
-	line-height: 40px;
+	line-height: 1;
 	text-shadow: 0 1px 8px transparentize($color-black, .5);
 	letter-spacing: -1px;
 }
 .headerSection-subtitle {
 	margin: 6px 0 0;
 	color: $color-grayLighter;
-	font-size: 14px;
+	font-size: 1.2em;
 	font-weight: 300;
-	line-height: normal;
 	text-shadow: 0 1px 5px $color-black;
 }
 
@@ -90,6 +90,7 @@ body {
 	padding: 15px 0;
 	background: $color-primary;
 	text-align: center;
+	line-height: 1;
 
 	.icon + .icon { margin-left: 10%; }
 }
@@ -97,7 +98,7 @@ body {
 .sectionTitle {
 	margin: 0 0 8px;
 	color: $color-grayDarker;
-	font-size: 28px;
+	font-size: 1.2em;
 	font-weight: 600;
 }
 
@@ -105,11 +106,14 @@ body {
 	p {
 		margin: 0 0 18px;
 		font-family: $fontFamily-roboto;
-		font-size: 15px;
 	}
 	em {
 		font-weight: 400;
 		font-style: normal;
+	}
+	a {
+		@extend .link;
+		font-weight: 400;
 	}
 }
 
@@ -186,14 +190,14 @@ body {
 }
 .timeline-item-title {
 	margin: 0;
-	font-size: 16px;
+	font-size: 1.2em;
 	font-weight: 600;
 }
 .timeline-item-subtitle {
 	margin-top: 0;
 	color: $color-grayDark;
 	font-family: $fontFamily-roboto;
-	font-size: 12px;
+	font-size: 0.8em;
 	font-weight: 300;
 }
 .timeline-item-subtitle-split {
@@ -204,8 +208,6 @@ body {
 	}
 }
 .timeline-item-description {
-	font-size: 14px;
-
 	strong {
 		font-family: $fontFamily-roboto;
 		font-weight: 400;
@@ -213,27 +215,6 @@ body {
 		white-space: nowrap;
 	}
 	a {
-		position: relative;
-		display: inline-block;
-		color: $color-primary;
-		text-decoration: none;
-		font-weight: bold;
-
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: -2px;
-			left: 50%;
-			width: 0%;
-			height: 2px;
-			background: transparent;
-			@include transition(left .2s ease .2s, width .2s ease .2s, background .2s ease 0);
-		}
-		&:hover::after {
-			left: 0%;
-			width: 100%;
-			background: $color-primary;
-			@include transition(left .2s, width .2s, background .15s);
-		}
+		@extend .link;
 	}
 }

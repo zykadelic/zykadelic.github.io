@@ -2,3 +2,28 @@
 
 $fontFamily-openSans: 'Open Sans', sans-serif;
 $fontFamily-roboto: 'Roboto Slab', serif;
+
+.link {
+  position: relative;
+  display: inline-block;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: bold;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: transparent;
+    @include transition(left .2s ease .2s, width .2s ease .2s, background .2s ease 0);
+  }
+  &:hover::after {
+    left: 0%;
+    width: 100%;
+    background: $color-primary;
+    @include transition(left .2s, width .2s, background .15s);
+  }
+}
